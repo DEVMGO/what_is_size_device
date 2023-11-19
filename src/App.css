@@ -1,5 +1,105 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100dvh;
+  background: #192338;
+  position: relative;
+}
+
+.App .width {
+  position: absolute;
+  width: 100%;
+  top: 5rem;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App .width .line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App .width .line .w-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid rgb(5, 207, 5);
+  border-bottom: 25px solid transparent;
+}
+
+.App .width .line .w-line {
+  background: rgb(5, 207, 5);
+  width: 100%;
+  height: 10px;
+}
+
+.App .width .line .w-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgb(5, 207, 5);
+  border-bottom: 25px solid transparent;
+}
+
+.App .width .data h5 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.App .height {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.App .height .line {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.App .height .h-top {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid yellow;
+}
+
+.App .height .h-line {
+  background: yellow;
+  width: 10px;
+  height: 100%;
+}
+
+.App .height .h-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid yellow;
+}
+
+.App .height .data h5 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 500;
 }
 
 .App-logo {
@@ -7,32 +107,14 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+@media (max-width: 750px) {
+  .App .height .data h5,
+  .App .width .data h5 {
+    font-size: 1.2rem;
   }
 }
