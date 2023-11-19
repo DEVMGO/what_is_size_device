@@ -111,10 +111,41 @@
   color: #61dafb;
 }
 
-
 @media (max-width: 750px) {
   .App .height .data h5,
   .App .width .data h5 {
     font-size: 1.2rem;
+  }
+
+  .App .width .line .w-left {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid rgb(5, 207, 5);
+    border-bottom: 15px solid transparent;
+  }
+
+  .App .width .line .w-right {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid rgb(5, 207, 5);
+    border-bottom: 15px solid transparent;
+  }
+
+  .App .height .h-top {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid yellow;
+  }
+
+  .App .height .h-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid yellow;
   }
 }
